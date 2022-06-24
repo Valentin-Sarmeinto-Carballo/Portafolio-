@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: rgb(125, 36, 91);
+}
+body{
+    background-color: rgb(35,35,35);
+    color: pink;
+    display: flex;
+    flex-direction: column;
+    width: 100vh;
+     
+}
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+   background-color: pink;
+   color: rgb(255,0,100);
+}
+header{
+    display: flex;
+    flex-direction: row;
+}
+.titulo{
+    display: flex;
+    flex-direction: column;
+}
+.habil{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+    
+}
+.skills{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
