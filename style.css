@@ -4,32 +4,76 @@
 }
 a{
     text-decoration: none;
-    color: rgb(125, 36, 91);
+    color: rgb(110, 36, 120);
+ 
 }
 body{
+    box-sizing: border-box;
     background-color: rgb(35,35,35);
-    color: pink;
+    color: rgb(185, 202, 255);
     display: flex;
     flex-direction: column;
-    width: 100vh;
+    font-family: 'Solway', serif;
+    height: 100vh;
      
 }
+
+/* ............................................navegador......................................... */
+.circulo{
+    
+    color: rgb(255,35,140);
+    font-weight: 400;}
 .nav{
+    
+    height: 7.5%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-   background-color: pink;
-   color: rgb(255,0,100);
+    align-items: center;
+   background-color: rgb(185, 202, 255);
+   color: rgb(255,35,140);
+  
+ 
 }
+.others{
+   
+    
+    height: 100% ;
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+/* ..............................................encabezado.......................................... */
 header{
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 30px;
+    height: 30%;
+    margin: 10%;
+}
+.imagen1{
+    height: 300px;
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
 }
 .titulo{
     display: flex;
     flex-direction: column;
+    margin: 0 40% 0 0%;
 }
+.nombr{
+    font-weight: 700;
+    color: rgb(255,35,140);
+}
+/* .....................................................Habilidades....................................... */
 .habil{
+   
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -39,6 +83,43 @@ header{
 }
 .skills{
     display: flex;
+    box-sizing: border-box;
     flex-direction: row;
     justify-content: space-around;
+    
+}
+.vlemclas{
+    font-size: 7em;
+    background-color: rgb(140,125,250);
+    margin: 2%;
+    padding: 3%;
+    border-radius: 50%;
+}
+/* .....................................................Cita................................................ */
+.cita{
+    padding: 13%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(140,125,250);
+    color: rgb(70,0,120);
+    border-radius: 15px;
+    margin: 13% 3%;
+}
+/* .....................................................Proyectos............................................... */
+.principal-proyecto{
+    display: flex;
+    flex-direction: column;
+    margin: 0 2% 5% 2%;
+    
+}
+.img-proyect{
+    padding: 10%;
+    background-color: rgb(180,25,180);
+    
+    margin: 0 70% 0 0;
+}
+.proyecto{
+    font-size: 3em;
 }
