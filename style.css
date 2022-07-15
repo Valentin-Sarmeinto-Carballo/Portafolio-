@@ -9,7 +9,7 @@ a{
 }
 body{
     box-sizing: border-box;
-    background-color: rgb(35,35,35);
+    background-color: rgb(53, 33, 110);
     color: rgb(185, 202, 255);
     display: flex;
     flex-direction: column;
@@ -20,26 +20,32 @@ body{
 
 /* ............................................navegador......................................... */
 .circulo{
-    
+    margin: 3%;
     color: rgb(255,35,140);
-    font-weight: 400;}
-.nav{
+    font-weight: 400;
+    padding: 2%;
+    background-color: rgb(185, 202, 255);
     
-    height: 7.5%;
+}
+.circulo:hover{  
+    background-color: rgb(140,125,250);
+    border-radius: 20px;   
+}
+    
+.nav{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
    background-color: rgb(185, 202, 255);
    color: rgb(255,35,140);
+   
+   font-size: 1.3em;
   
  
 }
 .others{
-   
-    
     height: 100% ;
-    width: 30%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -78,6 +84,7 @@ header{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
   
     
 }
@@ -94,6 +101,7 @@ header{
     margin: 2%;
     padding: 3%;
     border-radius: 50%;
+    border: solid 3px rgb(185, 202, 255) ;
 }
 /* .....................................................Cita................................................ */
 .cita{
@@ -106,20 +114,96 @@ header{
     color: rgb(70,0,120);
     border-radius: 15px;
     margin: 13% 3%;
+    border: solid 3px rgb(185, 202, 255) ;
 }
 /* .....................................................Proyectos............................................... */
 .principal-proyecto{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin: 0 2% 5% 2%;
     
 }
 .img-proyect{
-    padding: 10%;
-    background-color: rgb(180,25,180);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 80px;
+    background-color: rgb(140,125,250);
+    box-sizing: border-box;
+    border-radius: 15px;
+    border: solid 3px rgb(185, 202, 255) ;
+    margin: 2%;
     
-    margin: 0 70% 0 0;
 }
 .proyecto{
     font-size: 3em;
 }
+/* ...............................................formulario................................................... */
+.contacto-main{
+    padding: 2% ;
+    margin: 2%;
+    background-color: rgb(110, 94, 228);
+    display: flex;
+    flex-direction: row;
+    border: solid 2px rgb(185, 202, 255);
+    border-radius: 20px;
+    
+}
+.con-letras{
+    padding: 0 20% 0 0;
+    font-size: 2em;
+}
+
+
+.con-titulo{
+    padding: 3% 0;
+     font-size: 2em;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5em;
+    left: 0;
+    
+}
+.nombre-apellido{
+    display: flex;
+    flex-direction: row;
+    padding: 0 0 3% 0;
+   
+}
+.input-nombres{
+    background-color: rgb(185, 202, 255);
+    width: 40%;
+    border: none;
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding: 1.5%;
+    
+}
+.input-mail{
+    background-color: rgb(185, 202, 255);
+    border: none;
+    width: 40%;
+    height: 2.5em;
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding: 1.5%;
+    
+    
+}
+.input-mensaje{
+    background-color: rgb(185, 202, 255);
+    border: none;
+    width: 90%;
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding: 1%;
+    
+    
+}
+
+
+
