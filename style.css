@@ -14,27 +14,24 @@ body{
     display: flex;
     flex-direction: column;
     font-family: 'Solway', serif;
-    /* height: 100vh;
-    background-image: url(./Prueba.jpg);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-attachment: fixed; */
+    
 }
 
 /* ............................................navegador......................................... */
-.circulo{
+.link{
     margin: 3%;
     color: rgb(255,35,140);
     font-weight: 400;
     padding: 2%;
     background-color: rgb(185, 202, 255);
     
+    
 }
-.circulo:hover{  
+.link:hover{  
     background-color: rgb(140,125,250);
-    border-radius: 20px;  
-     
-    transition-delay: 1s;
+    border-radius: 10px;  
+    
+    transition-duration: 1000ms;
 }
     
 .nav{
@@ -62,12 +59,13 @@ header{
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    font-size: 30px;
+    font-size: 45px;
     height: 30%;
-    margin: 10%;
+    margin: 2% 5%;
+    
 }
-.imagen1{
-    height: 300px;
+.imagen-perfil{
+    height: 500px;
     display: flex;  
     justify-content: center;
     align-items: center;
@@ -76,22 +74,23 @@ header{
 .titulo{
     display: flex;
     flex-direction: column;
-    margin: 0 40% 0 0%;
+   
 }
 .nombr{
     font-weight: 700;
     color: rgb(255,35,140);
 }
 /* .....................................................Habilidades....................................... */
+.habilidades{
+ padding: 15% 3% ;
+}
 .habil{
    
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    
-  
-    
+    align-items: center;   
+    font-size: 35px;
 }
 .skills{
     display: flex;
@@ -100,11 +99,11 @@ header{
     justify-content: space-around;
     
 }
-.vlemclas{
-    font-size: 7em;
+.Iconos{
+    font-size: 13em;
     background-color: rgb(140,125,250);
     margin: 2%;
-    padding: 3%;
+    padding: 5%;
     border-radius: 50%;
     border: solid 3px rgb(255,35,140);
     color: rgb(255,35,140);
