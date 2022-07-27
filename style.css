@@ -14,8 +14,11 @@ body{
     display: flex;
     flex-direction: column;
     font-family: 'Solway', serif;
-    height: 100vh;
-     
+    /* height: 100vh;
+    background-image: url(./Prueba.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed; */
 }
 
 /* ............................................navegador......................................... */
@@ -29,7 +32,9 @@ body{
 }
 .circulo:hover{  
     background-color: rgb(140,125,250);
-    border-radius: 20px;   
+    border-radius: 20px;  
+     
+    transition-delay: 1s;
 }
     
 .nav{
@@ -48,7 +53,7 @@ body{
     height: 100% ;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: flex-end;
     align-items: center;
 }
 /* ..............................................encabezado.......................................... */
@@ -101,7 +106,8 @@ header{
     margin: 2%;
     padding: 3%;
     border-radius: 50%;
-    border: solid 3px rgb(185, 202, 255) ;
+    border: solid 3px rgb(255,35,140);
+    color: rgb(255,35,140);
 }
 /* .....................................................Cita................................................ */
 .cita{
@@ -114,7 +120,7 @@ header{
     color: rgb(70,0,120);
     border-radius: 15px;
     margin: 13% 3%;
-    border: solid 3px rgb(185, 202, 255) ;
+    border: solid 3px rgb(255,35,140) ;
 }
 /* .....................................................Proyectos............................................... */
 .principal-proyecto{
@@ -133,7 +139,8 @@ header{
     background-color: rgb(140,125,250);
     box-sizing: border-box;
     border-radius: 15px;
-    border: solid 3px rgb(185, 202, 255) ;
+    border: solid 3px rgb(255,35,140) ;
+    color: rgb(255,35,140);
     margin: 2%;
     
 }
@@ -147,7 +154,7 @@ header{
     background-color: rgb(110, 94, 228);
     display: flex;
     flex-direction: row;
-    border: solid 2px rgb(185, 202, 255);
+    border: solid 2px rgb(255,35,140);
     border-radius: 20px;
     
 }
@@ -160,6 +167,7 @@ header{
 .con-titulo{
     padding: 3% 0;
      font-size: 2em;
+     color: rgb(255,35,140);
 }
 .form{
     display: flex;
