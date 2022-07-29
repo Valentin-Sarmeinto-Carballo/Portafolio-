@@ -70,6 +70,17 @@ header{
     justify-content: center;
     align-items: center;
     border-radius: 50%;
+    width: 500px;
+    background: url(Vlemb.jpg);
+    background-size: cover;
+    transition-duration: 1500ms;
+
+}
+.imagen-perfil:hover{
+    background: url(Vlembbb.jpg);
+    background-size: cover;
+    transition-duration: 1000ms;
+
 }
 .titulo{
     display: flex;
@@ -109,7 +120,7 @@ header{
     color: rgb(255,35,140);
 }
 /* .....................................................Cita................................................ */
-.cita{
+/* .cita{
     padding: 13%;
     display: flex;
     flex-direction: column;
@@ -120,7 +131,7 @@ header{
     border-radius: 15px;
     margin: 13% 3%;
     border: solid 3px rgb(255,35,140) ;
-}
+} */
 /* .....................................................Proyectos............................................... */
 .principal-proyecto{
     display: flex;
@@ -181,36 +192,32 @@ header{
     padding: 0 0 3% 0;
    
 }
-.input-nombres{
-    background-color: rgb(185, 202, 255);
-    width: 40%;
+.input-mail,.input-nombres,.input-mensaje, .boton{
     border: none;
     border-radius: 20px;
     box-sizing: border-box;
+    background-color: rgb(185, 202, 255);
+}
+.input-nombres{
+    width: 40%;
     padding: 1.5%;
-    
 }
 .input-mail{
-    background-color: rgb(185, 202, 255);
-    border: none;
     width: 40%;
     height: 2.5em;
-    border-radius: 20px;
-    box-sizing: border-box;
     padding: 1.5%;
-    
-    
 }
 .input-mensaje{
-    background-color: rgb(185, 202, 255);
-    border: none;
-    width: 90%;
-    border-radius: 20px;
-    box-sizing: border-box;
+    width: 90%; 
     padding: 1%;
-    
-    
 }
-
+.boton{
+    padding: 1%;
+}
+.boton:hover{
+    background-color: rgb(255,35,140);
+    color: rgb(185, 202, 255);
+    transition-duration: 1000ms;
+}
 
 
