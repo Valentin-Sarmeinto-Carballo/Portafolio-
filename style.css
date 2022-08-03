@@ -1,223 +1,215 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
-a{
-    text-decoration: none;
-    color: rgb(110, 36, 120);
- 
+a {
+  text-decoration: none;
+  color: rgb(110, 36, 120);
 }
-body{
-    box-sizing: border-box;
-    background-color: rgb(53, 33, 110);
-    color: rgb(185, 202, 255);
+body {
+  box-sizing: border-box;
+  background-color: rgb(53, 33, 110);
+  color: rgb(185, 202, 255);
+  font-family: "Solway", serif;
+}
+.general {
+  display: flex;
+  flex-direction: row;
+}
+main {
+  /* position: relative;
     display: flex;
     flex-direction: column;
-    font-family: 'Solway', serif;
-    
+    justify-content: flex-end; */
+  margin-left: 20%;
 }
-
 /* ............................................navegador......................................... */
-.link{
-    margin: 3%;
-    color: rgb(255,35,140);
-    font-weight: 400;
-    padding: 2%;
-    background-color: rgb(185, 202, 255);
-    
-    
+.name {
+  display: flex;
+  justify-content: center;
 }
-.link:hover{  
-    background-color: rgb(140,125,250);
-    border-radius: 10px;  
-    
-    transition-duration: 1000ms;
+.nav {
+  height: 100%;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: ;
+  background-color: rgb(185, 202, 255);
+  color: rgb(255, 35, 140);
+  padding: 1%;
+  font-size: 1.3em;
 }
-    
-.nav{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-   background-color: rgb(185, 202, 255);
-   color: rgb(255,35,140);
-   
-   font-size: 1.3em;
-  
- 
+.Links {
+  margin: 65% 0 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
 }
-.others{
-    height: 100% ;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
+.link {
+    font-size: 1em;
+  margin: 5%;
+  color: rgb(255, 35, 140);
+  font-weight: 400;
+  padding: 3%;
+  background-color: rgb(185, 202, 255);
+  transition-duration: 1000ms;
 }
+.link:hover {
+  background-color: rgb(140, 125, 250);
+  border-radius: 10px;
+ box-shadow:  -2px -2px 0px 0.01px rgb(110, 94, 228)
+}
+
 /* ..............................................encabezado.......................................... */
-header{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    font-size: 45px;
-    height: 30%;
-    margin: 2% 5%;
-    
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 45px;
+  height: 30%;
 }
-.imagen-perfil{
-    height: 500px;
-    display: flex;  
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    width: 500px;
-    background: url(Vlemb.jpg);
-    background-size: cover;
-    transition-duration: 1500ms;
-
+.imagen-perfil {
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 500px;
+  background: url(Vlemb.jpg);
+  background-size: cover;
+  transition-duration: 1500ms;
 }
-.imagen-perfil:hover{
-    background: url(Vlembbb.jpg);
-    background-size: cover;
-    transition-duration: 1000ms;
-
+.imagen-perfil:hover {
+  background: url(Vlembbb.jpg);
+  background-size: cover;
+  transition-duration: 1000ms;
 }
-.titulo{
-    display: flex;
-    flex-direction: column;
-   
+.titulo {
+  display: flex;
+  flex-direction: column;
 }
-.nombr{
-    font-weight: 700;
-    color: rgb(255,35,140);
+.nombr {
+  font-weight: 700;
+  color: rgb(255, 35, 140);
 }
 /* .....................................................Habilidades....................................... */
-.habilidades{
- padding: 15% 3% ;
+.habilidades {
+  padding: 15% 3%;
 }
-.habil{
-   
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;   
-    font-size: 35px;
+.habil {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
 }
-.skills{
-    display: flex;
-    box-sizing: border-box;
-    flex-direction: row;
-    justify-content: space-around;
-    
+.skills {
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: row;
+  justify-content: space-around;
 }
-.Iconos{
-    font-size: 13em;
-    background-color: rgb(140,125,250);
-    margin: 2%;
-    padding: 5%;
-    border-radius: 50%;
-    border: solid 3px rgb(255,35,140);
-    color: rgb(255,35,140);
+.Iconos:hover {
+  transform: rotate(1080deg) scale(1.1);
+  color: rgb(185, 202, 255);
+  border: solid 3px rgb(185, 202, 255);
+  box-shadow: inset 0px 0px 0px 10px rgb(46, 23, 65); 
 }
-/* .....................................................Cita................................................ */
-/* .cita{
-    padding: 13%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color:rgb(140,125,250);
-    color: rgb(70,0,120);
-    border-radius: 15px;
-    margin: 13% 3%;
-    border: solid 3px rgb(255,35,140) ;
-} */
+.Iconos {
+  font-size: 13em;
+  background-color: rgb(140, 125, 250);
+  margin: 2%;
+  padding: 5%;
+  border-radius: 50%;
+  border: solid 3px rgb(255, 35, 140);
+  color: rgb(255, 35, 140);
+  transition: 1s;
+}
+
 /* .....................................................Proyectos............................................... */
-.principal-proyecto{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0 2% 5% 2%;
-    
+.principal-proyecto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 2% 5% 2%;
 }
-.img-proyect{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 100px 80px;
-    background-color: rgb(140,125,250);
-    box-sizing: border-box;
-    border-radius: 15px;
-    border: solid 3px rgb(255,35,140) ;
-    color: rgb(255,35,140);
-    margin: 2%;
-    
+.img-proyect {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 80px;
+  background-color: rgb(140, 125, 250);
+  box-sizing: border-box;
+  border-radius: 15px;
+  border: solid 3px rgb(255, 35, 140);
+  color: rgb(255, 35, 140);
+  margin: 2%;
+  font-size: 2em;
 }
-.proyecto{
-    font-size: 3em;
+.proyecto {
+  font-size: 3em;
+}
+/* ...............................................contacto................................................... */
+.contacto-main {
+  padding: 5%;
+
+  background-color: rgb(110, 94, 228);
+  display: flex;
+  flex-direction: row;
+  border: solid 2px rgb(255, 35, 140);
+  border-radius: 20px;
+}
+.con-letras {
+  padding: 5%;
+  font-size: 2em;
+}
+
+.con-titulo {
+  padding: 3% 0;
+  font-size: 2em;
+  color: rgb(255, 35, 140);
 }
 /* ...............................................formulario................................................... */
-.contacto-main{
-    padding: 2% ;
-    margin: 2%;
-    background-color: rgb(110, 94, 228);
-    display: flex;
-    flex-direction: row;
-    border: solid 2px rgb(255,35,140);
-    border-radius: 20px;
-    
+.form {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5em;
 }
-.con-letras{
-    padding: 0 20% 0 0;
-    font-size: 2em;
+.nombre-apellido {
+  display: flex;
+  flex-direction: row;
+  padding: 0 0 3% 0;
 }
-
-
-.con-titulo{
-    padding: 3% 0;
-     font-size: 2em;
-     color: rgb(255,35,140);
+.input-mail,
+.input-nombres,
+.input-mensaje,
+.boton {
+  border: none;
+  border-radius: 20px;
+  box-sizing: border-box;
+  background-color: rgb(185, 202, 255);
 }
-.form{
-    display: flex;
-    flex-direction: column;
-    font-size: 1.5em;
-    left: 0;
-    
+.input-nombres {
+  width: 40%;
+  padding: 1.5%;
 }
-.nombre-apellido{
-    display: flex;
-    flex-direction: row;
-    padding: 0 0 3% 0;
-   
+.input-mail {
+  width: 40%;
+  height: 2.5em;
+  padding: 1.5%;
 }
-.input-mail,.input-nombres,.input-mensaje, .boton{
-    border: none;
-    border-radius: 20px;
-    box-sizing: border-box;
-    background-color: rgb(185, 202, 255);
+.input-mensaje {
+  width: 90%;
+  padding: 1%;
 }
-.input-nombres{
-    width: 40%;
-    padding: 1.5%;
+.boton {
+  padding: 1%;
 }
-.input-mail{
-    width: 40%;
-    height: 2.5em;
-    padding: 1.5%;
+.boton:hover {
+  background-color: rgb(255, 35, 140);
+  color: rgb(185, 202, 255);
+  transition-duration: 1000ms;
 }
-.input-mensaje{
-    width: 90%; 
-    padding: 1%;
-}
-.boton{
-    padding: 1%;
-}
-.boton:hover{
-    background-color: rgb(255,35,140);
-    color: rgb(185, 202, 255);
-    transition-duration: 1000ms;
-}
-
-
