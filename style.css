@@ -8,7 +8,10 @@ a {
 }
 body {
   box-sizing: border-box;
-  background-color: rgb(53, 33, 110);
+  background-image: url(roto.jpg);
+  background-size: cover ;
+  
+
   color: rgb(185, 202, 255);
   font-family: "Solway", serif;
 }
@@ -33,7 +36,7 @@ main {
   position: fixed;
   display: flex;
   flex-direction: column;
-  justify-content: ;
+ 
   background-color: rgb(185, 202, 255);
   color: rgb(255, 35, 140);
   padding: 1%;
@@ -155,15 +158,16 @@ header {
 /* ...............................................contacto................................................... */
 .contacto-main {
   padding: 5%;
-
+  
   background-color: rgb(110, 94, 228);
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   border: solid 2px rgb(255, 35, 140);
   border-radius: 20px;
 }
 .con-letras {
-  padding: 5%;
+  padding: 3%;
   font-size: 2em;
 }
 
@@ -175,7 +179,7 @@ header {
 /* ...............................................formulario................................................... */
 .form {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   font-size: 1.5em;
 }
 .nombre-apellido {
@@ -193,7 +197,7 @@ header {
   background-color: rgb(185, 202, 255);
 }
 .input-nombres {
-  width: 40%;
+  width: 90%;
   padding: 1.5%;
 }
 .input-mail {
@@ -212,4 +216,9 @@ header {
   background-color: rgb(255, 35, 140);
   color: rgb(185, 202, 255);
   transition-duration: 1000ms;
+}
+.contenedor-nombres-propios{
+  display: flex;
+  flex-direction: column;
+  
 }

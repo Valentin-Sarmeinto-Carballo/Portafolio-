@@ -22,7 +22,7 @@
   <body>
     <div class="general">
       <!-- ...............................................nav.................................................. -->
-      <nav class="nav" >
+      <nav class="nav">
         <div class="name"><h1>Valen</h1></div>
         <div class="Links">
           <a href="#hola" class="link">hola</a>
@@ -34,7 +34,7 @@
       <!-- ...............................................encabezado............................................. -->
       <main>
         <header id="hola">
-          <div class="titulo" >
+          <div class="titulo">
             <p i>Hola soy</p>
             <p class="nombr">Valentin Sarmiento</p>
             <p>desarrollador y artista</p>
@@ -72,38 +72,51 @@
           <div class="form">
             <form action="">
               <div class="nombre-apellido">
-                <h3>*Nombre</h3>
-                <input
-                  type="text"
-                  required
-                  class="input-nombres"
-                  placeholder="Ejemplo: Lucas Ariel"
-                />
-                <h3>Apellido*</h3>
-                <input
-                  type="text"
-                  required
-                  class="input-nombres"
-                  placeholder="Ejemplo: Cardoso"
-                />
+                <div class="contenedor-nombres-propios">
+                  <label for="nombres">*Nombre</label>
+                  <input
+                    id="nombres"
+                    type="text"
+                    required
+                    class="input-nombres"
+                    placeholder="Ejemplo: Lucas Ariel"
+                  />
+                </div>
+                <div class="contenedor-nombres-propios">
+                  <label for="apellido">Apellido*</label>
+                  <input
+                    type="text"
+                    required
+                    class="input-nombres"
+                    placeholder="Ejemplo: Cardoso"
+                    id="apellido"
+                  />
+                </div>
               </div>
               <div class="mensaje-form">
-                <h3>E-mail*</h3>
-                <input
-                  type="email"
-                  required
-                  class="input-mail"
-                  placeholder="Ejemplo: TCprofesional@gmail.com"
-                />
-                <h3>Mensaje*</h3>
-                <textarea
-                  name=""
-                  id=""
-                  cols="30"
-                  rows="10"
-                  class="input-mensaje"
-                  placeholder="Escribe el mensaje aqui"
-                ></textarea>
+                <div class="contenedor-nombres-propios">
+                  <label for="mail">E-mail*</label>
+                  <input
+                    type="email"
+                    required
+                    class="input-mail"
+                    placeholder="Ejemplo: TCprofesional@gmail.com"
+                    id="mail"
+                  />
+                </div>
+                <div>
+                  <div class="contenedor-nombres-propios"> 
+                    <label for="mensajito">*Mensaje</label>
+                    <textarea
+                      name=""
+                      id="mensajito"
+                      cols="30"
+                      rows="10"
+                      class="input-mensaje"
+                      placeholder="Escribe el mensaje aqui"
+                    ></textarea>
+                  </div>
+                </div>
               </div>
               <button type="submit" class="boton">Enviar</button>
             </form>
